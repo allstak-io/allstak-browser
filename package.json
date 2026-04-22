@@ -1,7 +1,7 @@
 {
-  "name": "@allstak/browser",
+  "name": "@allstak-io/browser",
   "version": "0.1.1",
-  "description": "AllStak browser SDK \u2014 window.onerror, unhandledrejection, fetch instrumentation, and session tracking. Depends on @allstak/core.",
+  "description": "AllStak browser SDK — window.onerror, unhandledrejection, fetch instrumentation, and session tracking. Depends on @allstak-io/core.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -24,7 +24,7 @@
   },
   "homepage": "https://allstak.sa",
   "bugs": {
-    "url": "https://github.com/abdualziz-urnt/allstak-browser/issues"
+    "url": "https://github.com/allstak-io/allstak-browser/issues"
   },
   "keywords": [
     "allstak",
@@ -33,14 +33,16 @@
     "error-tracking"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --clean --sourcemap --platform browser"
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean --sourcemap --platform browser",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@allstak/core": "github:allstak-io/allstak-core",
-    "allstak-js": "github:allstak-io/allstak-js"
+    "@allstak-io/core": "github:allstak-io/allstak-core",
+    "@allstak-io/allstak-js": "github:allstak-io/allstak-js"
   },
   "devDependencies": {
     "tsup": "^8.0.0",
