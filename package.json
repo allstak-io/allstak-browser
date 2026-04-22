@@ -1,7 +1,7 @@
 {
   "name": "@allstak/browser",
   "version": "0.1.1",
-  "description": "AllStak browser SDK — window.onerror, unhandledrejection, fetch instrumentation, and session tracking. Depends on @allstak/core.",
+  "description": "AllStak browser SDK \u2014 window.onerror, unhandledrejection, fetch instrumentation, and session tracking. Depends on @allstak/core.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -12,7 +12,11 @@
       "require": "./dist/index.js"
     }
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -22,7 +26,12 @@
   "bugs": {
     "url": "https://github.com/abdualziz-urnt/allstak-browser/issues"
   },
-  "keywords": ["allstak", "observability", "browser", "error-tracking"],
+  "keywords": [
+    "allstak",
+    "observability",
+    "browser",
+    "error-tracking"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -31,7 +40,7 @@
   },
   "dependencies": {
     "@allstak/core": "^0.1.1",
-    "allstak-js": "^0.1.1"
+    "allstak-js": "github:abdualziz-urnt/allstak-js"
   },
   "devDependencies": {
     "tsup": "^8.0.0",
