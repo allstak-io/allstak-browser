@@ -1,7 +1,7 @@
 /**
- * @allstak-io/browser — browser-specific public API.
+ * @allstak/browser — browser-specific public API.
  *
- * When initialized via `AllStak.init({...})` from `@allstak-io/core`, the
+ * When initialized via `AllStak.init({...})` from `@allstak/core`, the
  * underlying client automatically wires:
  *   - window.onerror + window.onunhandledrejection capture
  *   - fetch instrumentation (breadcrumbs + /requests ingest)
@@ -10,14 +10,14 @@
  *
  * This package re-exports those APIs and adds nothing that isn't already
  * in the core client — it exists so app developers can depend on
- * `@allstak-io/browser` and get intellisense that only shows browser-safe APIs.
+ * `@allstak/browser` and get intellisense that only shows browser-safe APIs.
  */
-export { AllStak } from '@allstak-io/core';
+export { AllStak } from '@allstak/core';
 export type {
   AllStakConfig,
   Breadcrumb,
   HttpRequestItem,
-} from '@allstak-io/core';
+} from '@allstak/core';
 
 /** Convenience helpers for manual instrumentation. */
 export { captureException, captureMessage, setUser, setTag } from './helpers';

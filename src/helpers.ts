@@ -1,4 +1,4 @@
-import { AllStak } from '@allstak-io/core';
+import { AllStak } from '@allstak/core';
 
 /** Capture an Error; no-op if `init()` has not been called. */
 export function captureException(error: Error, context?: Record<string, unknown>): void {
